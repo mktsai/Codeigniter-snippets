@@ -1,0 +1,9 @@
+{
+  "name": "codeigniter-snippets",
+  "version": "0.0.1",
+  "description": "Codeigniter snippets for Atom Editor",
+  "repository": "https://github.com/mktsai/Codeigniter-snippets",
+  "engines": {
+    "atom": ">=1.8.0"
+  }
+}

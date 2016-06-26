@@ -1,0 +1,309 @@
+'.php':
+  #資料庫
+	'Codeigniter Load Database':
+  	'prefix': 'ci-load-db'
+  	'body': "$this->load->database();"
+
+	'Codeigniter connect Database':
+  	'prefix': 'ci-db-dbconnect'
+  	'body': "$this->db->db_connect();"
+
+  'Codeigniter Reconnect Database':
+  	'prefix': 'ci-db-reconnect'
+  	'body': "$this->db->reconnect();"
+
+	'Codeigniter Close Database':
+  	'prefix': 'ci-db-close'
+  	'body': "$this->db->close();"
+
+	'Codeigniter Select a Database':
+  	'prefix': 'ci-db-dbselect'
+  	'body': "$this->db->db_select('${0:DatabaseName}');"
+
+  'Codeigniter Set Charset Code':
+  	'prefix': 'ci-db-setcharset'
+  	'body': "$this->db->db_set_charset('UTF-8');"
+
+  'Codeigniter SQL Query':
+  	'prefix': 'ci-db-query'
+  	'body': "$this->db->query('${0:SQL Query}');"
+
+	'Codeigniter Compiles an SQL query with the bind values passed for it.':
+  	'prefix': 'ci-db-compilebinds'
+  	'body': "$this->db->compile_binds(${0:$sql}, ${1:$binds});"
+
+	'Codeigniter Calculate the aggregate query elapsed time.':
+  	'prefix': 'ci-db-elapsedtime'
+  	'body': "$this->db->elapsed_time();"
+
+	'Codeigniter Returns the total number of queries that have been executed so far.':
+  	'prefix': 'ci-db-totalqueries'
+  	'body': "$this->db->total_queries();"
+
+	'Codeigniter Returns the last query that was executed.':
+  	'prefix': 'ci-db-lastquery'
+  	'body': "$this->db->last_query();"
+
+	'Codeigniter Escapes input data based on type, including boolean and NULLs.':
+  	'prefix': 'ci-db-escape'
+  	'body': "$this->db->escape(${0:$str});"
+
+	'Codeigniter Returns the total number of rows in a table, or 0 if no table was provided.':
+  	'prefix': 'ci-db-countall'
+  	'body': "$this->db->count_all(${0:$table_name});"
+
+	'Codeigniter Gets a list of the tables in the current database.':
+  	'prefix': 'ci-db-listtables'
+  	'body': "$this->db->list_tables(${0:$table_name});"
+
+	'Codeigniter Determine if a particular table exists.':
+  	'prefix': 'ci-db-tableexists'
+  	'body': "$this->db->table_exists(${0:$str});"
+
+	'Codeigniter Determine if a particular table exists.':
+  	'prefix': 'ci-db-listfields'
+  	'body': "$this->db->list_fields(${0:$table_name});"
+
+	'Codeigniter Determine if a particular field exists.':
+  	'prefix': 'ci-db-fieldexists'
+  	'body': "$this->db->field_exists(${0:$field_name}, ${1:$table_name});"
+
+	'Codeigniter Gets a list containing field data about a table.':
+  	'prefix': 'ci-db-fielddata'
+  	'body': "$this->db->field_data(${0:$table_name});"
+
+	'Codeigniter Sets the directory path to use for caching storage.':
+  	'prefix': 'ci-db-cachesetpath'
+  	'body': "$this->db->cache_set_path(${0:$path});"
+
+	'Codeigniter Enable database results caching.':
+  	'prefix': 'ci-db-cacheon'
+  	'body': "$this->db->cache_on();"
+
+	'Codeigniter Disable database results caching.':
+  	'prefix': 'ci-db-cacheoff'
+  	'body': "$this->db->cache_off();"
+
+	'Codeigniter Delete the cache files associated with a particular URI.':
+  	'prefix': 'ci-db-cachedel'
+  	'body': "$this->db->cache_delete(${0:$segment});"
+
+	'Codeigniter Delete all cache files.':
+  	'prefix': 'ci-db-cachedelall'
+  	'body': "$this->db->cache_delete_all();"
+
+	'Codeigniter Display an error message and stop script execution.':
+  	'prefix': 'ci-db-displayerror'
+  	'body': "$this->db->display_error();"
+
+	'Codeigniter Return query result.':
+  	'prefix': 'ci-db-result'
+  	'body': "$this->db->result();"
+
+	'Codeigniter Return Returns the query results as an array of rows, where each row is itself an associative array.':
+  	'prefix': 'ci-db-resultarray'
+  	'body': "$this->db->result_array();"
+
+	'Codeigniter Returns the query results as an array of rows, where each row is an object of type stdClass.':
+  	'prefix': 'ci-db-resultobject'
+  	'body': "$this->db->result_object();"
+
+	'Codeigniter Returns row data.':
+  	'prefix': 'ci-db-row'
+  	'body': "$this->db->row(${0:$n});"
+
+	'Codeigniter Returns the requested result row as an associative array.':
+  	'prefix': 'ci-db-rowarray'
+  	'body': "$this->db->row_array();"
+
+	'Codeigniter Returns the requested result row as an object of type stdClass.':
+  	'prefix': 'ci-db-rowobject'
+  	'body': "$this->db->row_object();"
+
+	'Codeigniter Assigns a value to a particular column.':
+  	'prefix': 'ci-db-setrow'
+  	'body': "$this->db->set_row(${0:$key});"
+
+	'Codeigniter Returns the next row from the result set.':
+  	'prefix': 'ci-db-nextrow'
+  	'body': "$this->db->next_row(${0:$type});"
+
+	'Codeigniter Returns the previous row from the result set.':
+  	'prefix': 'ci-db-prerow'
+  	'body': "$this->db->previous_row(${0:$type});"
+
+	'Codeigniter Returns the first row from the result set.':
+  	'prefix': 'ci-db-firstrow'
+  	'body': "$this->db->first_row(${0:$type});"
+
+	'Codeigniter Returns the last row from the result set.':
+  	'prefix': 'ci-db-lastrow'
+  	'body': "$this->db->last_row(${0:$type});"
+
+	'Codeigniter Returns the number of rows in the result set.':
+  	'prefix': 'ci-db-numrows'
+  	'body': "$this->db->num_rows();"
+
+	'Codeigniter Returns last insert data id.':
+  	'prefix': 'ci-db-insertid'
+  	'body': "$this->db->insert_id();"
+
+	'Codeigniter Returns insert, update, delete etc. affected number.':
+  	'prefix': 'ci-db-affectedrows'
+  	'body': "$this->db->affected_rows();"
+
+	'Codeigniter 重置當前查詢生成器的狀態':
+  	'prefix': 'ci-db-resetquery'
+  	'body': "$this->db->reset_query();"
+
+	'Codeigniter 開始查詢生成器的快取。':
+  	'prefix': 'ci-db-startcache'
+  	'body': "$this->db->start_cache();"
+
+	'Codeigniter 停止查詢生成器的快取。':
+  	'prefix': 'ci-db-stopcache'
+  	'body': "$this->db->stop_cache();"
+
+	'Codeigniter 清空查詢生成器的快取':
+  	'prefix': 'ci-db-flushcache'
+  	'body': "$this->db->flush_cache();"
+
+	'Codeigniter 計算某表格的所有查詢結果數量':
+  	'prefix': 'ci-db-countallresults'
+  	'body': "$this->db->count_all_results(${0:$table_name});"
+
+	'Codeigniter 根據已經呼叫的查詢生成器方法，編譯並執行 SELECT 語句。':
+  	'prefix': 'ci-db-get'
+  	'body': "$this->db->get('${0:table_name}', ${1:$limit}, ${2:$offset});"
+
+	'Codeigniter 跟 get() 相同，但是讓你可以直接加入 WHERE 子句。':
+  	'prefix': 'ci-db-getwhere'
+  	'body': "$this->db->get_where('${0:table_name}', ${1:$where}, ${2:$limit}, ${3:$offset});"
+
+	'Codeigniter 在查詢中加入 SELECT 欄位 子句。':
+  	'prefix': 'ci-db-select'
+  	'body': "$this->db->select('${0:field}');"
+
+	'Codeigniter 在查詢中加入 SELECT AVG(field) 子句。':
+  	'prefix': 'ci-db-selectavg'
+  	'body': "$this->db->select_avg('${0:field}');"
+
+	'Codeigniter 在查詢中加入 SELECT MAX(field) 子句。':
+  	'prefix': 'ci-db-selectmax'
+  	'body': "$this->db->select_max('${0:field}');"
+
+	'Codeigniter 在查詢中加入 SELECT MIN(field) 子句。':
+  	'prefix': 'ci-db-selectmin'
+  	'body': "$this->db->select_min('${0:field}');"
+
+	'Codeigniter 在查詢中加入 SELECT SUM(field) 子句。':
+  	'prefix': 'ci-db-selectsum'
+  	'body': "$this->db->select_sum('${0:field}');"
+
+	'Codeigniter 在SELECT 部分加入 DISTINCT 子句。':
+  	'prefix': 'ci-db-distinct'
+  	'body': "$this->db->distinct('${0:field}');"
+
+	'Codeigniter 指定查詢的 FROM 子句。':
+  	'prefix': 'ci-db-from'
+  	'body': "$this->db->from('${0:$from}');"
+
+	'Codeigniter 在查詢中加入 JOIN 子句。':
+  	'prefix': 'ci-db-join'
+  	'body': "$this->db->join('${0:table}', '${1:table}.id = ${2:table}.id');"
+
+	'Codeigniter 在查詢中加入 WHERE 子句。':
+  	'prefix': 'ci-db-where'
+  	'body': "$this->db->where('${0:key}', '${1:$value}');"
+
+	'Codeigniter 在查詢中加入 WHERE 子句，多次呼叫會加入 OR。':
+  	'prefix': 'ci-db-orwhere'
+  	'body': "$this->db->or_where('${0:key}', '${1:$value}');"
+
+	'Codeigniter 在查詢中加入 WHERE IN 子句，多次呼叫會加入 OR。':
+  	'prefix': 'ci-db-orwherein'
+  	'body': "$this->db->or_where_in('${0:key}', '${1:datas}');"
+
+	'Codeigniter 在查詢中加入 WHERE NOT IN 子句，多次呼叫會加入 OR。':
+  	'prefix': 'ci-db-orwherenotin'
+  	'body': "$this->db->or_where_not_in('${0:key}', '${1:datas}');"
+
+	'Codeigniter 在查詢中加入 WHERE IN 子句，多次呼叫會加入 AND':
+  	'prefix': 'ci-db-wherein'
+  	'body': "$this->db->where_in('${0:key}', '${1:datas}');"
+
+	'Codeigniter 在查詢中加入 WHERE IN 子句，多次呼叫會加入 AND':
+  	'prefix': 'ci-db-wherenotin'
+  	'body': "$this->db->where_not_in('${0:key}', '${1:datas}');"
+
+	'Codeigniter 在查詢中加入 LIKE 子句，多次呼叫會加入 AND':
+  	'prefix': 'ci-db-like'
+  	'body': "$this->db->like('${0:key}', '${1:value}', 'both');"
+
+	'Codeigniter 在查詢中加入 LIKE 子句，多次呼叫會加入 OR':
+  	'prefix': 'ci-db-orlike'
+  	'body': "$this->db->or_like('${0:key}', '${1:value}', 'both');"
+
+	'Codeigniter 在查詢中加入 NOT LIKE 子句，多次呼叫會加入 AND':
+  	'prefix': 'ci-db-notlike'
+  	'body': "$this->db->not_like('${0:key}', '${1:value}', 'both');"
+
+	'Codeigniter 在查詢中加入 NOT LIKE 子句，多次呼叫會加入 OR':
+  	'prefix': 'ci-db-ornotlike'
+  	'body': "$this->db->or_not_like('${0:key}', '${1:value}', 'both');"
+
+	'Codeigniter 在查詢中加入 HAVING 子句，多次呼叫會加入 AND':
+  	'prefix': 'ci-db-having'
+  	'body': "$this->db->having('${0:key}', '${1:value}');"
+
+	'Codeigniter 在查詢中加入 HAVING 子句，多次呼叫會加入 OR':
+  	'prefix': 'ci-db-orhaving'
+  	'body': "$this->db->or_having('${0:key}', '${1:value}');"
+
+	'Codeigniter 在查詢中加入 HAVING 子句，多次呼叫會加入 OR':
+  	'prefix': 'ci-db-orhaving'
+  	'body': "$this->db->or_having('${0:key}', '${1:value}');"
+
+	'Codeigniter 在查詢中加入 GROUP BY 子句':
+  	'prefix': 'ci-db-groupby'
+  	'body': "$this->db->group_by('${0:key}');"
+
+	'Codeigniter 在查詢中加入 ORDER BY 子句':
+  	'prefix': 'ci-db-orderby'
+  	'body': "$this->db->order_by('${0:key}', 'ASC');"
+
+	'Codeigniter 在查詢中加入 LIMIT 與 OFFSET 子句':
+  	'prefix': 'ci-db-limit'
+  	'body': "$this->db->limit('${0:$num}', '${1:$offset}');"
+
+	'Codeigniter 在查詢中加入 OFFSET 子句':
+  	'prefix': 'ci-db-offset'
+  	'body': "$this->db->offset('${0:$offset}');"
+
+	'Codeigniter 在查詢中加入 SET 子句，稍後會被傳給 insert() , update() 或 replace() 的欄位處理':
+  	'prefix': 'ci-db-set'
+  	'body': "$this->db->set('${0:$key}', '${1:$value}');"
+
+	'Codeigniter 在查詢中加入 INSERT 子句。':
+  	'prefix': 'ci-db-insert'
+  	'body': "$this->db->insert('${0:$table}', '${1:$data}');"
+
+	'Codeigniter 編譯並執行批次的 INSERT 語句。':
+  	'prefix': 'ci-db-insertbatch'
+  	'body': "$this->db->insert_batch('${0:$table}', '${1:$data}');"
+
+	'Codeigniter 執行 update 語句。':
+  	'prefix': 'ci-db-update'
+  	'body': "$this->db->update('${0:$table}', '${1:$data}');"
+
+	'Codeigniter 編譯並執行批次的 INSERT 語句。':
+  	'prefix': 'ci-db-updatebatch'
+  	'body': "$this->db->update_batch('${0:$table}', '${1:$data}');"
+
+	'Codeigniter 執行 DELETE 語句。':
+  	'prefix': 'ci-db-delete'
+  	'body': "$this->db->delete('${0:$table}', '${1:$where}');"
+
+	'Codeigniter 執行 TRUNCATE  語句。':
+  	'prefix': 'ci-db-truncate'
+  	'body': "$this->db->truncate('${0:$table}');"
