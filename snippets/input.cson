@@ -1,0 +1,37 @@
+'.php':
+  #input
+	'Codeigniter only it fetches the php://input stream data.':
+  	'prefix': 'ci-input-inputstream'
+  	'body': "$this->input->input_stream();"
+
+  'Codeigniter Read POST data as is.':
+  	'prefix': 'ci-input-post'
+  	'body': "$this->input->post('${0:key}', TRUE);"
+
+  'Codeigniter Read GET data as is.':
+  	'prefix': 'ci-input-get'
+  	'body': "$this->input->get('${0:key}', TRUE);"
+
+  'Codeigniter Read POST first then GET data.':
+  	'prefix': 'ci-input-postget'
+  	'body': "$this->input->post_get('${0:key}', TRUE);"
+
+  'Codeigniter Read GET first then POST data.':
+  	'prefix': 'ci-input-getpost'
+  	'body': "$this->input->get_post('${0:key}', TRUE);"
+
+  'Codeigniter return cookie values, can use array':
+  	'prefix': 'ci-input-cookie'
+  	'body': "$this->input->cookie('${0:key}');"
+
+  'Codeigniter return an array of multiple $_SERVER values or single key,':
+  	'prefix': 'ci-input-server'
+  	'body': "$this->input->server('${0:key}');"
+
+  'Codeigniter Set cookie key and value':
+  	'prefix': 'ci-input-setcookie'
+  	'body': "$this->input->set_cookie('${1:key}', ${2:$value}, 3600);$0"
+
+  'Codeigniter Returns the IP address for the current user.':
+  	'prefix': 'ci-input-ipaddress'
+  	'body': "$this->input->ip_address();$0"
