@@ -1,0 +1,33 @@
+'.php':
+  #input
+	'Codeigniter Permits you to retrieve a specific segment.':
+  	'prefix': 'ci-uri-segment'
+  	'body': "$this->uri->segment(1);"
+
+  'Codeigniter This method is identical to segment().':
+  	'prefix': 'ci-uri-rsegment'
+  	'body': "$this->uri->rsegment(1);"
+
+  'Codeigniter It adds a trailing and/or leading slash based on the second parameter.':
+  	'prefix': 'ci-uri-slashsegment'
+  	'body': "$this->uri->slash_segment('1', 'both');"
+
+  'Codeigniter .':
+  	'prefix': 'ci-uri-slashrsegment'
+  	'body': "$this->uri->slash_rsegment(1);"
+
+  'Codeigniter This method lets you turn URI segments into an associative array of key/value pairs. ':
+  	'prefix': 'ci-uri-uritoassoc'
+  	'body': "$this->uri->uri_to_assoc(3);"
+
+  'Codeigniter Takes an associative array as input and generates a URI string from it. The array keys will be included in the string.':
+  	'prefix': 'ci-uri-assoctouri'
+  	'body': "$this->uri->assoc_to_uri(array('${1:segment}' => 'value'));$0"
+
+  'Codeigniter Returns a string with the complete URI.':
+  	'prefix': 'ci-uri-uristring'
+  	'body': "$this->uri->uri_string();"
+
+  'Codeigniter Returns the total number of segments.':
+  	'prefix': 'ci-uri-totalsegments'
+  	'body': "$this->uri->total_segments();"
