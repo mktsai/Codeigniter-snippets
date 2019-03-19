@@ -60,11 +60,11 @@
   	'prefix': 'ci-db-tableexists'
   	'body': "$this->db->table_exists(${0:$str});"
 
-	'Codeigniter Determine if a particular table exists.':
+	'Returns an array containing the field names':
   	'prefix': 'ci-db-listfields'
   	'body': "$this->db->list_fields(${0:$table_name});"
 
-	'Codeigniter Determine if a particular field exists.':
+	'Sometimes its helpful to know whether a particular field exists before performing an action':
   	'prefix': 'ci-db-fieldexists'
   	'body': "$this->db->field_exists(${0:$field_name}, ${1:$table_name});"
 
@@ -232,7 +232,7 @@
   	'prefix': 'ci-db-wherein'
   	'body': "$this->db->where_in('${0:key}', '${1:datas}');"
 
-	'Codeigniter 在查詢中加入 WHERE IN 子句，多次呼叫會加入 AND':
+	'Codeigniter 在查詢中加入 WHERE NOT IN 子句，多次呼叫會加入 AND':
   	'prefix': 'ci-db-wherenotin'
   	'body': "$this->db->where_not_in('${0:key}', '${1:datas}');"
 
@@ -255,10 +255,6 @@
 	'Codeigniter 在查詢中加入 HAVING 子句，多次呼叫會加入 AND':
   	'prefix': 'ci-db-having'
   	'body': "$this->db->having('${0:key}', '${1:value}');"
-
-	'Codeigniter 在查詢中加入 HAVING 子句，多次呼叫會加入 OR':
-  	'prefix': 'ci-db-orhaving'
-  	'body': "$this->db->or_having('${0:key}', '${1:value}');"
 
 	'Codeigniter 在查詢中加入 HAVING 子句，多次呼叫會加入 OR':
   	'prefix': 'ci-db-orhaving'
@@ -296,7 +292,7 @@
   	'prefix': 'ci-db-update'
   	'body': "$this->db->update('${0:$table}', '${1:$data}');"
 
-	'Codeigniter 編譯並執行批次的 INSERT 語句。':
+	'Codeigniter 編譯並執行批次的 UPDATE 語句。':
   	'prefix': 'ci-db-updatebatch'
   	'body': "$this->db->update_batch('${0:$table}', '${1:$data}');"
 
